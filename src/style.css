@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-image: url(../img/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+#content {
+    box-sizing: border-box;
+    background-color: rgb(122, 119, 119, 0.5);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.logo>img {
+    cursor: pointer;
+}
+img {
+    max-height: 200px;
+    max-width: 200px;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+span {
+    text-align:center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    max-width: 50%;
+    white-space: pre-wrap;
+}
+
+.nav {
+    background-color: rgba(5, 239, 118, 0.5);
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+}
+.nav button {
+    border: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: none;
+    transition: all linear 100ms;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.nav button:hover {
+    border-bottom: solid black 2px;
+}
+
+
+.menuContainer {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 5rem;
+    display: grid;
+    grid-template: 1fr 1fr / repeat(auto-fit, 30rem);
+    justify-content: center;
+    gap: 1rem;
+}
+
+.menuContainer .menuItem {
+    background-color: rgba(0, 0, 0, 0.335);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+.menuItem>img {
+    margin-bottom: auto;
+}
+.menuItem h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+}

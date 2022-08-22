@@ -1,3 +1,13 @@
+import apple from "../img/apple.jpeg"
+import bread from "../img/bread.jpg"
+import choc from "../img/choc.jpg"
+import logo from "../img/logo.png"
+import pasta from "../img/pasta.jpg"
+import rice from "../img/rice.jpg"
+import salmon from "../img/salmon.jpg"
+import wallpaper from "../img/wallpaper.jpg"
+import water from "../img/water.jpg"
+
 export function loadHomepage(){
     let parent = document.querySelector(`div#content`);
     parent.innerHTML = ``;
@@ -50,42 +60,42 @@ export function loadMenu(){
 //THE RANDOM PRICE IS INTENTIONAL, JUST A FUNNY EASTER EGG SINCE IT DOENS'T MATTER.
 let products = Array.from([
     {
-        src: "../img/pasta.jpg",
+        src: pasta,
         name: "PASTA",
         price: `${(Math.random()*10).toFixed(2)}£`
     },
     {
-        src: "../img/rice.jpg",
+        src: rice,
         name: "RICE",
         price: `${(Math.random()*10).toFixed(2)}£`
     },
     {
-        src: "../img/bread.jpg",
+        src: bread,
         name: "BREAD",
         price: `${(Math.random()*10).toFixed(2)}£`
     },
     {
-        src: "../img/apple.jpeg",
+        src: apple,
         name: "APPLE",
         price: `${(Math.random()*10).toFixed(2)}£`
     },
     {
-        src: "../img/salmon.webp",
+        src: salmon,
         name: "EGG",
         price: `${(Math.random()*10).toFixed(2)}£`
     },
     {
-        src: "../img/salmon.webp",
+        src: salmon,
         name: "UNCUT SASHIMI",
         price: `${(Math.random()*10).toFixed(2)}£`
     },
     {
-        src: "../img/choc.jpg",
+        src: choc,
         name: "DARK CHOCOLATE",
         price: `${(Math.random()*10).toFixed(2)}£`
     },
     {
-        src: "../img/water.jpg",
+        src: water,
         name: "WATER",
         price: `${(Math.random()*10).toFixed(2)}£`
     },
